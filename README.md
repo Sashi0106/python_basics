@@ -131,3 +131,21 @@ Sun  Mon  Tue  Wed  Thu  Fri  Sat
 18   19   20   21   22   23   24   
 25   26   27   28   29   30   31   
 ///
+or
+#calender program
+mdays=31
+sday=1
+print("Sun Mon Tue Wed Thu Fri Sat")
+for _ in range(sday):
+    print(" ",end='  ')
+for days in range(1, mdays+1):
+    print(f"{days: >3}",end=' ')
+    if (sday+days)%7 ==0:
+        print()
+output:
+Sun Mon Tue Wed Thu Fri Sat
+     1   2   3   4   5   6 
+  7   8   9  10  11  12  13 
+ 14  15  16  17  18  19  20 
+ 21  22  23  24  25  26  27 
+ 28  29  30  31 
